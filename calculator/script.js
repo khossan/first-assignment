@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
     console.log(operationType);
     if (operationType == "null") {
       message.classList.add("error");
-      message.innerText = "select addition type please";
+      message.innerText = "Please select calculation type";
     } else if (operationType == "+") {
       let sum = InputOneValue + inputTwoValue;
       message.classList.remove("error");
