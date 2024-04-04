@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calculator-section">
+      <div class="calculate">
+        <h2 class="text-center">Basic Calculator</h2>
+        <form action="" id="calculate">
+          <div class="input-fields d-flex justify-content-between gap-3">
+            <div class="input-group">
+              <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Number One"
+                aria-label="Username"
+                id="inputOne"
+                aria-describedby="basic-addon1"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Number Two"
+                id="inputTwo"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                required
+              />
+            </div>
+          </div>
+          <div class="action d-flex justify-content-between gap-3 mt-2">
+            <select
+              id="operationType"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option disabled selected value="null">
+                Select an arithmetic operatio
+              </option>
+              <option value="+">addition (+)</option>
+              <option value="-">subtraction (-)</option>
+              <option value="*">multiplication (*)</option>
+              <option value="/">division (/)</option>
+            </select>
+            <div class="submit">
+              <button class="btn btn-primary" type="submit">Calculate</button>
+            </div>
+          </div>
+          <div class="result mt-2">
+            <p class="message">Result for operation type: Adidtion</p>
+            <p class="output">Output: <span>0</span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f9f9f9;
+}
+.profile-section {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+}
+.profile-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+.details {
+  display: flex;
+}
+.profile-card .profile-pic {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 75px;
+  border: 2px solid turquoise;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+.profile-card .profile-pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.social {
+  display: block;
+  text-align: center;
+}
+h2.name {
+  font-size: 16px;
+  font-weight: bold;
+}
+p.username {
+  font-size: 14px;
+  color: #949494;
+  margin-bottom: 20px;
+}
+.description p {
+  font-size: 14px;
+  color: #949494;
+  margin-bottom: 10px;
+}
+.description a {
+  color: turquoise;
+}
+.bottom {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.bottom div {
+  text-align: center;
+}
+.bottom div:not(:last-child) {
+  border-right: 1px solid #5752528a;
+}
+.bottom .title {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 3px;
+}
+.bottom .desc {
+  font-size: 12px;
+  color: #949494;
+}
+.social i {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: turquoise;
+}
